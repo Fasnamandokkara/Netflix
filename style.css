@@ -1,0 +1,303 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'poppins',sans-serif;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+body{
+    background: black;
+    color: white;
+}
+header{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(images/bgimage.jpeg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+    position: relative;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 10px 0;
+
+}
+.logo{
+    width: 150px;
+    cursor: pointer;
+}
+nav button{
+    border: 0;
+    outline: 0;
+    background: red;
+    color: #fff;
+    height: 30px;
+    width: 80px;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.language-button{
+    display: inline-flex;
+    align-items: center;
+    background: transparent;
+    border: 1px solid #fff ;
+    padding: 7px 10;
+}
+.header-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    margin-top: 100px;
+}
+.header-content h1{
+    
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: 600px;
+    max-width: 650px;
+}
+.header-content h4{
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.e-mail-signup{
+    background: #fff;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    overflow: hidden;
+}
+.e-mail-signup input{
+    background:#fff;
+        flex: 1; 
+        border: 0;
+        outline: 0;
+        margin-left: 20px;
+}
+.e-mail-signup button{
+    background: #ba0a0a;
+        border: 0;
+        outline: 0;
+        color: #fff;
+        font-size: 16px;
+        cursor: pointer;
+    padding:15px 30px  ;
+
+}
+.second{
+    padding:50px 12%;
+    font-size: 22px;
+}
+.row{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px o;
+}
+.text-col{
+    flex-basis: 50%;
+    margin-bottom: 30px;
+}
+.img-col{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+.img-col img{
+    display:block;
+    width: 90%;
+    margin: auto;
+}
+.second h2{
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.hrline{
+    width: 100%;
+    height: 8px;
+    background: rgb(63,63,63);
+}
+section.faq{
+    text-align: center;
+    margin-top: 50px;
+    padding: 0 200px;
+}
+section.faq h1{
+    font-size: 50px;
+}
+.accordion{
+    margin: 60px auto;
+    width: 100%;
+    /* max-width: 950px; */
+}
+.accordion li{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+    font-size: 20px;
+}
+.accordion li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 25px;
+    font-weight: 500x;
+    background: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+.accordion li label::after{
+    content: '+';
+    font-size: 54px;
+    position: absolute;
+    right: 20px;
+    font-weight: 100;
+    /* transition: transform 0.2s; */
+    
+}
+.accordion li input[type ="radio"]{
+    display: none;
+}
+.accordion .content{
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    /* max-width: 20px 0; */
+    max-height: 0;
+    
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+.accordion input[type ="radio"]:checked + label + .content{
+    padding: 20px 20px 70px 20px;
+    height: 400px;
+}
+.accordion input[type ="radio"]:checked + label::after{
+    transform: rotate(45deg);
+    
+}
+.membership{
+    margin-bottom: 30px;
+}
+.input{
+    display:inline grid;
+    align-items: center;
+    grid-template-columns: 50% 40%;
+
+}
+.input input{
+    background:rgba(8, 8, 8, 0.433) ;
+    border-radius: 5px;
+    outline-color: #fff;
+    border: 1px solid #a69b9b;
+    width: 500px;
+    height: 3.25rem;
+    padding-left: 10px;
+}
+.input button{
+    height: 3.25rem;
+    width: 200px;
+    /* left: 20px; */
+    margin-left: 10px;
+    text-align: center;
+    background-color:red;
+    font-size:1.5rem ;
+    border: 15px 32px;
+    border: none;
+    border-radius: 2px;
+    color: #fff;
+}
+.faq .membership form{
+    margin-top: 10px; 
+    margin-bottom: 20px;  
+}
+.faq .membership p{
+    margin-top: 15px;
+    font-size: 1.2rem;
+}
+.faq .membership form input,.header-content form input{
+    height: 60px;
+    width: 370px;
+    background: rgba(0,0,0,0.5);
+    border: 1px solid rgb(143,143,143);
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    outline-color: #fff;
+    color: #fff;
+
+}
+.faq .membership form button ,.header-content form button{
+    height: 60px;
+    width: 180px;
+    background:#db0001;
+    border: 1px solid rgb(143,143,143);
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: 20px;
+    font-weight: 900;
+    color: #fff;
+    border: none;
+
+}
+.faq .membership form button i ,.header-content form button i{
+    margin-left: 5px;
+}
+
+
+footer{
+    padding: 50px 200px;
+
+}
+footer p{
+    color: #939393;
+    font-size: 17px;
+    margin-top: 20px;
+    letter-spacing: 1px;
+}
+footer a{
+    color: #939393;
+}
+footer .footer-cols{
+    display: flex;
+    margin-top: 40px;
+}
+footer .footer-cols ul{
+    list-style: none;
+}
+footer .footer-cols ul li{
+    margin-top: 16px;
+    margin-right: 200px;
+    font-size: 15px;
+
+}
+footer .language-button{
+    outline: 0;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 12px;
+    display: inline-flex;
+    align-items: center;
+    background: transparent;
+    border: 1px solid #fff;
+    padding: 7px 22px;
+    margin-top: 20px;
+}
+footer .language-button i{
+    margin-left: 10px;
+}
+
+
+
+
+
